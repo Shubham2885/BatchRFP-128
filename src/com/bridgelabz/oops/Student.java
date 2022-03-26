@@ -7,7 +7,7 @@ class Student {
 
 	//instance variable
 	int rollNo;
-	
+
 	//instance method
 	int getRollNo() {
 		return rollNo;
@@ -17,7 +17,7 @@ class Student {
 
 //exmaple of public
 //public  = access the instance variable and method and also class  through out project
-/*
+
 public class Student {
 
 	//instance variable
@@ -28,11 +28,11 @@ public class Student {
 		return rollNo;
 	}
 }
-*/
+
 
 //exmaple of private
 //private  = you cannot access the instance variable and method  outside this class
-
+/*
 public class Student {
 
 	//instance variable
