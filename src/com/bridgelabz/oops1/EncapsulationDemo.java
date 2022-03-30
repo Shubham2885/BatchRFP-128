@@ -22,20 +22,21 @@ class Car {
 		
 	}
 	
-	public static void main(String[] args) {
-		System.out.println("Car");
-	}
+//	public static void main(String[] args) {
+//		System.out.println("Car");
+//	}
 }
 
 class Medician {
-	private String xContent;
+	protected String xContent;
 	private String yContent;
 	private String zContent;
 	
-	public Medician(String xContent, String yContent, String zContent) {
-		this.xContent = xContent;
-		this.yContent = yContent;
-		this.zContent = zContent;
+	public Medician(String xContent1, String yContent1, String zContent1) {
+		this.xContent = xContent1;
+		yContent = yContent1;
+		zContent = zContent1;
+		System.out.println("Medician Constructor");
 	}
 
 	public void reduceFever() {
@@ -44,10 +45,42 @@ class Medician {
 	}
 }
 
+class Mankind extends Medician {
+	public Mankind(String xContent, String yContent, String zContent) {
+		super(xContent, yContent, zContent);
+		System.out.println("Mankind Constructor");
+		System.out.println("Show ="+this.xContent);
+	}
+}
+
+class Mankind2 extends Mankind {
+	public Mankind2(String xContent, String yContent, String zContent) {
+		super(xContent, yContent, zContent);
+		System.out.println("Mankind2 Constructor");
+		System.out.println("Mankind2 ="+this.xContent);
+	}
+}
+
+class Ramdev extends Medician {
+
+	public Ramdev(String xContent, String yContent, String zContent) {
+		super(xContent, yContent, zContent);
+	}
+}
+
+class Patanjali extends Medician  {
+	
+	public Patanjali(String xContent, String yContent, String zContent) {
+		super(xContent, yContent, zContent);
+	}
+}
+
 public class EncapsulationDemo {
 
 	public static void main(String[] args) {
-		Medician medician = new Medician("H2O","O2","SO4");
-		medician.reduceFever();
+		Mankind2 mankind2 = new Mankind2("H2O","O2","SO4");
+		mankind2.reduceFever();
+		mankind2.xContent = "sdf";
+		mankind2.reduceFever();
 	}
 }
