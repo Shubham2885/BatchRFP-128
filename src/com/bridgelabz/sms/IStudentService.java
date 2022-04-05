@@ -1,7 +1,9 @@
 package com.bridgelabz.sms;
 
+import java.util.ArrayList;
+
 public interface IStudentService {
 
-	public Student[] getAllStudents();
+	public ArrayList<Student> getAllStudents();
 	public void addStudent(Student student);
 }

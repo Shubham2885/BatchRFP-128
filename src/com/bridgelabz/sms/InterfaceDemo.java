@@ -29,5 +29,6 @@ public class InterfaceDemo {
 		IDemo2 demo2 = new DemoImpl();
 		demo.printMyName("Shubham");
 		demo2.printMyFull("Shubham M Chavan");
+		
 	}
 }

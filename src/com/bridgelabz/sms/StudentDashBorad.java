@@ -1,5 +1,7 @@
 package com.bridgelabz.sms;
 
+import java.util.ArrayList;
+
 public class StudentDashBorad {
 
 	public static void main(String[] args) {
@@ -15,11 +17,13 @@ public class StudentDashBorad {
 		iStudentService.addStudent(student3);
 		iStudentService.addStudent(student4);
 		
-		Student[] students = iStudentService.getAllStudents();
+		ArrayList<Student> students = iStudentService.getAllStudents();
 		
-		System.out.println(students[0]);
-		System.out.println(students[1]);
-		System.out.println(students[2]);
-		System.out.println(students[3]);
+		for(Student stud : students) {
+			System.out.println("*******************************");
+			System.out.println("Name : "+stud.getName());
+			System.out.println("Roll : "+stud.getRollNo());
+			System.out.println("Sub : "+stud.getSub());
+		}
 	}
 }
