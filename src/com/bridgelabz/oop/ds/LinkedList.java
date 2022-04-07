@@ -17,16 +17,16 @@ public class LinkedList {
 	
 	public static void main(String[] args) {
 		
-//		Node node1 = new Node(100);
-//		Node node2 = new Node(200);
-//		Node node3 = new Node(300);
-//		Node node4 = new Node(400);
-//		Node node5 = new Node("Shubham");
+		Node node1 = new Node(100);
+		Node node2 = new Node(200);
+		Node node3 = new Node(300);
+		Node node4 = new Node(400);
+		Node node5 = new Node("Shubham");
 //		
-//		node1.nextRefOfNode = node2;
-//		node2.nextRefOfNode = node3;
-//		node3.nextRefOfNode = node4;
-//		node4.nextRefOfNode = node5;
+		node1.nextRefOfNode = node2;
+		node2.nextRefOfNode = node3;
+		node3.nextRefOfNode = node4;
+		node4.nextRefOfNode = null;
 		
 		add(100);
 		add(200);
@@ -59,6 +59,8 @@ public class LinkedList {
 			temp.nextRefOfNode = newNode;
 		}
 	}
+	
+	
 	
 	// int size(); return total count of nodes
 	// boolean isEmpty() check whether your list is empty or not
