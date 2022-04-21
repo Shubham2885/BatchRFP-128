@@ -5,10 +5,10 @@ import java.util.ArrayList;
 public class StudentDashBorad {
 
 	public static void main(String[] args) {
-		Student student = new Student("Shubham", 1234, "IT");
-		Student student2 = new Student("Anmol", 1234, "ME");
-		Student student3 = new Student("Raj", 1234, "ME");
-		Student student4 = new Student("Nitesh", 1254, "BE");
+		Student student = new Student("Shubham", 1234, "IT", 1);
+		Student student2 = new Student("Anmol", 1234, "ME", 1);
+		Student student3 = new Student("Raj", 1234, "ME", 1);
+		Student student4 = new Student("Nitesh", 1254, "BE", 1);
 		
 		IStudentService iStudentService = new StudentServiceImpl();
 		
